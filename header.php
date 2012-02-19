@@ -8,3 +8,4 @@
  <meta name="author" content="">
 </head>
 <body>
+ <header role="banner"></header>
