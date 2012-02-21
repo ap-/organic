@@ -10,5 +10,5 @@
  <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>
 <body>
- <header role="banner"></header>
+ <header role="banner" style="display:none"><h1><?php echo get_site_option('site_name');?></h1></header>
  <nav role="navigation"></nav>
