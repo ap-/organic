@@ -1,3 +1,4 @@
+  <hr>
   <footer role="contentinfo">
       <small><p>© 2012 <?php echo get_site_option('site_name');?></p></small>
   </footer>
