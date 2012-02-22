@@ -4,7 +4,7 @@
 
 <div class="row-fluid">
    <div class="span12">
-    <div class="hero-unit">
+    <div class="hero-unit shadow">
      <header>
       <hgroup>
        <h1><?php bloginfo('name'); ?></h1>
@@ -20,7 +20,7 @@
 <?php if ( have_posts() ) : ?>
  <?php while ( have_posts() ) : the_post(); ?>
   <li>
-   <a href="<?php the_permalink()?>" class="thumbnail">
+   <a href="<?php the_permalink()?>" class="thumbnail shadow">
     <?php if ( has_post_thumbnail() ) { ?><?php the_post_thumbnail('thumbnail',array('class' => ''));?><?php } else { ?><img src="http://placehold.it/150x150" alt=""><?php } ?>       
     <p><?php the_title();?></p> 
   </a>
