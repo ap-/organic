@@ -15,7 +15,9 @@
     </div><!--/hero-->
     <div class="row-fluid">
      <div class="span4">
-      <?php if ( has_post_thumbnail() ) { ?><?php the_post_thumbnail('large',array('class' => ''));?><?php } else { ?><img src="http://placehold.it/500x700" alt=""><?php } ?>	      
+      <span class="pull-right">
+       <?php if ( has_post_thumbnail() ) { ?><?php the_post_thumbnail('large',array('class' => ''));?><?php } else { ?><img src="http://placehold.it/500x700" alt=""><?php } ?>	      
+      </span>
       <blockquote cite="/" class="pull-right">
        <p><?php echo get_post_meta($post->ID, "person.quote", true); ?></p>
        <small><?php the_title();?>, <?php echo get_post_meta($post->ID, "person.year.birth", true); ?>-<?php echo get_post_meta($post->ID, "person.year.death", true); ?></small>
