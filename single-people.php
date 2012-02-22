@@ -15,7 +15,7 @@
     </div><!--/hero-->
     <div class="row-fluid">
      <div class="span4">
-      <?php if ( has_post_thumbnail() ) { ?><?php the_post_thumbnail('large',array('class' => ''));?><?php } else { ?><?php } ?>	      
+      <?php if ( has_post_thumbnail() ) { ?><?php the_post_thumbnail('large',array('class' => ''));?><?php } else { ?><img src="http://placehold.it/500x700" alt=""><?php } ?>	      
       <blockquote cite="/" class="pull-right">
        <p><?php echo get_post_meta($post->ID, "person.quote", true); ?></p>
        <small><?php the_title();?>, <?php echo get_post_meta($post->ID, "person.year.birth", true); ?>-<?php echo get_post_meta($post->ID, "person.year.death", true); ?></small>
@@ -31,19 +31,21 @@
  <?php endwhile; ?>
 <?php endif; ?>
 
-       <div class="span3">
-          <div class="well sidebar-nav">
-            <ul class="nav nav-list">
-              <li class="nav-header">Sidebar</li>
-              <li class="active"><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li><li><a href="#">Link</a></li><li><a href="#">Link</a></li>
-              <li class="nav-header">Sidebar</li>
-              <li><a href="#">Link</a></li><li><a href="#">Link</a></li><li><a href="#">Link</a></li>
-              <li class="nav-header">Sidebar</li>
-              <li><a href="#">Link</a></li><li><a href="#">Link</a></li><li><a href="#">Link</a></li>
-            </ul>
-          </div><!--/.well -->
-        </div><!--/span-->
+<nav role="navigation">
+ <div class="span3">
+	 <div class="well sidebar-nav">
+	  <ul class="nav nav-list">
+	   <li class="nav-header">People</li>
+    <li class="active"><a href="#">Active Link</a></li>
+	    <?php
+	     global $post; $args = array('orderby'=>'title','order'=>'asc','numberposts' => 100); $myposts = get_posts( $args );
+	     foreach( $myposts as $post ) :	setup_postdata($post); ?>
+	     <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
+	    <?php endforeach; ?>
+	  </ul>
+	 </div><!--/.well -->
+	</div><!--/span-->
+</nav>
 
 </div><!--/row-fluid-->
 
