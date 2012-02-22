@@ -31,20 +31,21 @@
  <?php endwhile; ?>
 <?php endif; ?>
 
+<?php $activepost=$post->ID;?>
+
 <nav role="navigation">
  <div class="span3">
-	 <div class="well sidebar-nav">
-	  <ul class="nav nav-list">
-	   <li class="nav-header">People</li>
-    <li class="active"><a href="#">Active Link</a></li>
-	    <?php
-	     global $post; $args = array('orderby'=>'title','order'=>'asc','numberposts' => 100); $myposts = get_posts( $args );
-	     foreach( $myposts as $post ) :	setup_postdata($post); ?>
-	     <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
-	    <?php endforeach; ?>
-	  </ul>
-	 </div><!--/.well -->
-	</div><!--/span-->
+  <div class="well sidebar-nav">
+   <ul class="nav nav-list">
+    <li class="nav-header">People</li>
+    <?php
+     global $post; $args = array('orderby'=>'title','order'=>'asc','numberposts' => 100); $myposts = get_posts( $args );
+     foreach( $myposts as $post ) :	setup_postdata($post); ?>
+     <li <?php if ($activepost==$post->ID) {echo 'class="active"';}?>><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
+    <?php endforeach; ?>
+   </ul>
+  </div><!--/.well -->
+ </div><!--/span-->
 </nav>
 
 </div><!--/row-fluid-->
