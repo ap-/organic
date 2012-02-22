@@ -9,7 +9,8 @@
 .hero-unit, .sidebar-nav {background-color: rgba(0,63,76,0.2);}
 
 .thumbnails > li {background-color:#EEEEEE; text-align:center}
-.thumbnails > li p {padding-top:15px; }
+.thumbnails > li p {padding-top:15px;}
+.thumbnails > li a:hover {background-color:#DBF0F7; text-decoration:none}
 
 .sidebar-nav, .hero-unit, img, .navbar-inner,  .thumbnails > li {
 border-radius: 8px;
