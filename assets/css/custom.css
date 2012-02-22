@@ -4,5 +4,20 @@
  .sidebar-nav {padding: 9px 0;}
 }
 
-.hero-unit {padding: 20px;}
+.hero-unit {padding: 20px; border: 1px solid rgba(0, 0, 0, 0.05);}
 .hero-unit h1 {font-size: 40px;}
+.hero-unit, .sidebar-nav {background-color: rgba(0,63,76,0.2);}
+
+.sidebar-nav, .hero-unit, img, .navbar-inner {
+border-radius: 8px;
+box-shadow: 2px 2px 2px #C0C0C0; 
+-moz-box-shadow: 2px 2px 2px #C0C0C0; 
+-webkit-box-shadow: 2px 2px 2px #C0C0C0;}
+
+.nav-list .active > a, .nav-list .active > a:hover {
+border-radius: 2px;
+box-shadow: 2px 2px 2px #888;
+-mox-box-shadow: 2px 2px 2px #888;
+-webkit-box-shadow: 2px 2px 2px #888;}
+
+body {background: url(../img/body.png);}
