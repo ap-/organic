@@ -8,7 +8,10 @@
 .hero-unit h1 {font-size: 40px;}
 .hero-unit, .sidebar-nav {background-color: rgba(0,63,76,0.2);}
 
-.sidebar-nav, .hero-unit, img, .navbar-inner {
+.thumbnails > li {background-color:#EEEEEE; text-align:center}
+.thumbnails > li p {padding-top:15px; }
+
+.sidebar-nav, .hero-unit, img, .navbar-inner,  .thumbnails > li {
 border-radius: 8px;
 box-shadow: 2px 2px 2px #C0C0C0; 
 -moz-box-shadow: 2px 2px 2px #C0C0C0; 
