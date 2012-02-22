@@ -5,7 +5,7 @@
  <?php while ( have_posts() ) : the_post(); ?>
   <div class="span9">
    <article role ="main" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-    <div class="hero-unit">
+    <div class="hero-unit shadow">
      <header>
       <hgroup>
        <h1><?php the_title();?></h1>
@@ -15,7 +15,7 @@
     </div><!--/hero-->
     <div class="row-fluid">
      <div class="span4">
-       <?php if ( has_post_thumbnail() ) { ?><?php the_post_thumbnail('large',array('class' => ''));?><?php } else { ?><img src="http://placehold.it/500x700" alt=""><?php } ?>	      
+       <?php if ( has_post_thumbnail() ) { ?><?php the_post_thumbnail('large',array('class' => 'shadow'));?><?php } else { ?><img src="http://placehold.it/500x700" class="shadow"><?php } ?>	      
       <blockquote cite="/" class="pull-right">
        <p><?php echo get_post_meta($post->ID, "person.quote", true); ?></p>
        <small><?php the_title();?>, <?php echo get_post_meta($post->ID, "person.year.birth", true); ?>-<?php echo get_post_meta($post->ID, "person.year.death", true); ?></small>
@@ -35,7 +35,7 @@
 
 <nav role="navigation">
  <div class="span3">
-  <div class="well sidebar-nav">
+  <div class="shadow sidebar-nav">
    <ul class="nav nav-list">
     <li class="nav-header">People</li>
     <?php
