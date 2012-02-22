@@ -1,22 +1,28 @@
 @media (min-width: 980px) 
 {
- body {padding-top: 60px;padding-bottom: 40px;}
- .sidebar-nav {padding: 9px 0;}
+body {padding-top: 60px;padding-bottom: 40px;} 
+.sidebar-nav {padding: 2px 0;}
 }
 
 .hero-unit {padding: 20px; border: 1px solid rgba(0, 0, 0, 0.05);}
 .hero-unit h1 {font-size: 40px;}
+
 .hero-unit, .sidebar-nav {background-color: rgba(0,63,76,0.2);}
 
 .thumbnails > li {background-color:#EEEEEE; text-align:center}
-.thumbnails > li p {padding-top:15px;}
+.thumbnails > li p {padding-top:15px; }
 .thumbnails > li a:hover {background-color:#DBF0F7; text-decoration:none}
 
-.sidebar-nav, .hero-unit, img, .navbar-inner,  .thumbnails > li {
-border-radius: 8px;
-box-shadow: 2px 2px 2px #C0C0C0; 
--moz-box-shadow: 2px 2px 2px #C0C0C0; 
--webkit-box-shadow: 2px 2px 2px #C0C0C0;}
+img {border-radius: 8px}
+
+.shadow {
+  border: 1px solid #eee;
+  border: 1px solid rgba(0,0,0,.05);
+  border-radius: 8px;
+  box-shadow: 2px 2px 2px #C0C0C0;
+  -moz-box-shadow: 2px 2px 2px #C0C0C0; 
+  -webkit-box-shadow: 2px 2px 2px #C0C0C0;;
+}
 
 .nav-list .active > a, .nav-list .active > a:hover {
 border-radius: 2px;
