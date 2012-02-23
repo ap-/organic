@@ -16,7 +16,7 @@
     </div><!--/hero-->
     <div class="row-fluid">
      <div class="span4">
-      <?php if ( has_post_thumbnail() ) { ?><?php the_post_thumbnail('medium',array('class' => 'shadow'));?><?php } else { ?><img src="http://placehold.it/300x500" class="shadow"><?php } ?>       
+      <?php if ( has_post_thumbnail() ) { ?><?php the_post_thumbnail('medium',array('class' => 'shadow'));?><?php } else { ?><img src="http://placehold.it/300x500" class="shadow"><?php } ?>	      
       <blockquote cite="/">
        <p><?php echo get_post_meta($post->ID, "person.quote", true); ?></p>
        <small><?php the_title();?>, <?php echo get_post_meta($post->ID, "person.year.birth", true); ?>-<?php echo get_post_meta($post->ID, "person.year.death", true); ?></small>
@@ -37,7 +37,7 @@
  	<div class="span3">
 	 <div class="shadow sidebar-nav">
 	  <ul class="nav nav-list">
-	   <li class="nav-header">People <?php echo $post->ID;?></li>
+	   <li class="nav-header">People</li>
 	    <?php
 	     global $post;
 	     $args = array('orderby'=>'title','order'=>'asc','numberposts' => 100);
