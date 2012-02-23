@@ -7,12 +7,12 @@
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
      </a>
-     <a class="brand" href="#"><?php echo get_site_option('site_name');?></a>
+     <a class="brand" href="/"><?php echo get_site_option('site_name');?></a>
      <div class="nav-collapse">
       <ul class="nav">
        <li class="active"><a href="#home">Home</a></li>
-       <li><a href="#about">About</a></li>
-       <li><a href="#contact">Contact</a></li>
+       <li><a href="/people/">People</a></li>
+       <li><a href="/test/">Test</a></li>
       </ul>
       <p class="navbar-text pull-right">
        <?php if ( is_user_logged_in() ) 
