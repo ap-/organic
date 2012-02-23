@@ -7,13 +7,13 @@
     <div class="hero-unit shadow">
      <header>
       <hgroup>
-       <?php if (is_category())
-  	     {echo '<h1>'; echo single_cat_title(); echo '</h1>'; 
-   	   echo '<h2><p>'; echo category_description( ); echo '</p></h2>';}
-	      else
-  	     {echo '<h1>'; echo bloginfo('name'); echo '</h1>'; 
-   	   echo '<h2><p>'; echo bloginfo('description'); echo '</p></h2>';}
-       ?>
+	<?php if (is_category())
+  	{echo '<h1>'; echo single_cat_title(); echo '</h1>'; 
+   	 echo '<h2>'; echo category_description( ); echo '</h2>';}
+	 else
+  	{echo '<h1>'; echo bloginfo('name'); echo '</h1>'; 
+   	 echo '<h2><p>'; echo bloginfo('description'); echo '</p></h2>';}
+	?>
       </hgroup>
      </header>
     </div><!--/hero-->
