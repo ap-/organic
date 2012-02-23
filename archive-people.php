@@ -23,7 +23,7 @@
 <div class="row-fluid">
 
 <div class="span12">
- <a class="btn" href="<?php echo get_bloginfo('url')?>" title = "All">All</a>
+ <a class="btn" href="<?php echo get_bloginfo('url')?>">All People</a>
  <?php 
   $cat = get_query_var('cat');
   foreach(get_categories('parent=0') as $category)
