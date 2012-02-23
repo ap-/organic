@@ -22,7 +22,7 @@
  <?php 
   $cat = get_query_var('cat');
   foreach(get_categories('parent=0') as $category)
-  {echo '<a class="btn" href="../' . $category->slug . '/" title="' .  $category->name  . '" ' . '>' . $category->name.'</a> ';}
+  {echo '<a class="btn" href="../' . $category->slug . '/">' . $category->name.'</a> ';}
  ?>
 </div>
 
@@ -33,7 +33,7 @@
  <?php while ( have_posts() ) : the_post(); ?>
   <li>
    <a href="<?php the_permalink()?>" class="thumbnail shadow">
-    <?php if ( has_post_thumbnail() ) { ?><?php the_post_thumbnail('thumbnail',array('class' => ''));?><?php } else { ?><img src="http://placehold.it/150x150" alt=""><?php } ?>         
+    <?php if ( has_post_thumbnail() ) { ?><?php the_post_thumbnail('thumbnail',array('title' => ''));?><?php } else { ?><img src="http://placehold.it/150x150"><?php } ?>         
     <p><?php the_title();?></p> 
   </a>
   </li>     
