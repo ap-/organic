@@ -22,7 +22,7 @@
  <?php 
   $cat = get_query_var('cat');
   foreach(get_categories('parent=0') as $category)
-  {echo '<a class="btn" href="../' . $category->slug . '/">' . $category->name.'</a> ';}
+  {echo '<a class="btn" href="'.get_bloginfo('url')."/" . $category->slug . '/">' . $category->name.'</a> ';}
  ?>
 </div>
 
