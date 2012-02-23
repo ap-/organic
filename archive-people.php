@@ -23,11 +23,13 @@
 <div class="row-fluid">
 
 <div class="span12">
- <a class="btn" href="<?php echo get_bloginfo('url')?>">All People</a>
+ <?php if (single_cat_title("", false)==$category->name) {$customclass='btn btn-inverse';} else {$customclass='btn';} ;?>
+ <a class="<?php echo $customclass?>" href="<?php echo get_bloginfo('url')?>">All</a>
  <?php 
   $cat = get_query_var('cat');
   foreach(get_categories('parent=0') as $category)
-  {echo '<a class="btn" href="'.get_bloginfo('url')."/" . $category->slug . '/">' . $category->name.'</a> ';}
+  { if (single_cat_title("", false)==$category->name) {$customclass='btn btn-inverse';} else {$customclass='btn';} ;
+   echo '<a class="' . $customclass . '" href="'.get_bloginfo('url')."/" . $category->slug . '/">' . $category->name.'</a> ';}
  ?>
 </div>
 
