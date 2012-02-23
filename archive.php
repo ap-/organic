@@ -1,1 +1,1 @@
-<?php get_template_part('archive','people');?>
+<?php include(locate_template('archive-people.php'));?>
