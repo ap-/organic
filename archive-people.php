@@ -18,7 +18,7 @@
 <div class="row-fluid">
 
 <div class="span12">
- <a class="btn" href="/" title = "All">All</a>
+ <a class="btn" href="../" title = "All">All</a>
  <?php 
   $cat = get_query_var('cat');
   foreach(get_categories('parent=0') as $category)
