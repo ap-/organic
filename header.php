@@ -10,7 +10,7 @@
  <link href="<?php echo get_bloginfo('template_directory'); ?>/assets/css/custom.css" rel="stylesheet">
  <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>
-<body>
+<body <?php body_class($class); ?>>
  <header role="banner" class="hidden">
   <h1><?php echo get_site_option('site_name');?></h1>
  </header>
