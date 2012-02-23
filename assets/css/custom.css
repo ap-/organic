@@ -12,6 +12,7 @@ body {padding-top: 60px;padding-bottom: 40px;}
 .thumbnails > li {background-color:#EEEEEE; text-align:center}
 .thumbnails > li p {padding-top:15px; }
 .thumbnails > li a:hover {background-color:#DBF0F7; text-decoration:none}
+.thumbnails > li {margin: 3px;}
 
 img {border-radius: 8px}
 
