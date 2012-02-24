@@ -35,7 +35,6 @@
 
 <hr>
 
-<article <?php post_class(); ?>>
 <ul class="thumbnails span12">
 <?php if ( have_posts() ) : ?>
  <?php while ( have_posts() ) : the_post(); ?>
@@ -48,7 +47,6 @@
  <?php endwhile; ?>
 <?php endif; ?>
 </ul>
-</article>
 </div><!--/row-fluid-->
 
 <?php get_footer();?>
