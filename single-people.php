@@ -5,7 +5,7 @@
 <?php if ( have_posts() ) : ?>
  <?php while ( have_posts() ) : the_post(); ?>
   <div class="span9">
-   <article role ="main" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+   <article role ="main" <?php post_class(); ?>>
     <div class="hero-unit shadow">
      <header>
       <hgroup>
