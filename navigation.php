@@ -1,5 +1,4 @@
- <nav role="navigation">
-  <div class="navbar navbar-fixed-top">
+ <nav role="navigation" class="navbar navbar-fixed-top">
    <div class="navbar-inner">
     <div class="container-fluid">
      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -22,5 +21,5 @@
      </div>
     </div>
    </div>
-  </div>
  </nav>
+ 
