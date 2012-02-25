@@ -1,5 +1,5 @@
 <div class="span3">
-<div class="accordion shadow" id="accordion-categories">
+<div class="accordion" id="accordion-categories">
 <?php
 $activepost=$post->ID;
 $postcategory=get_the_category();
@@ -10,7 +10,7 @@ $categories=get_categories($cat_args);
     $posts=get_posts($args);
       if ($posts) {
         if ($postcategory[0]->category_nicename==$category->slug) {$customstate = 'in';} else {$customstate = 'out';};
-        echo '<div class="accordion-group"><div class="accordion-heading"><a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-categories" href="#collapse-' . $category->slug . '">' . $category->name.'</a></div>';
+        echo '<div class="accordion-group shadow"><div class="accordion-heading"><a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-categories" href="#collapse-' . $category->slug . '">' . $category->name.'</a></div>';
         echo '<div id="collapse-' . $category->slug . '" class="accordion-body collapse ' . $customstate . '">';
         echo '<div class="sidebar-nav">';
         echo '<ul class=" accordion-inner nav nav-list">';
