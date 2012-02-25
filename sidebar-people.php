@@ -1,4 +1,3 @@
-<div class="span3">
 <div class="accordion" id="accordion-categories">
 <?php
 $activepost=$post->ID;
@@ -24,4 +23,3 @@ $categories=get_categories($cat_args);
     } // foreach($categories
 ?>
 </div><!--accordion-->
-</div>
