@@ -32,7 +32,9 @@
  <?php endif; ?>
 </div><!--/span-->
 
+<div class="span3">
 <?php get_template_part('sidebar','people');?>
+</div><!--/span-->
 
 </div><!--/row-fluid-->
 
