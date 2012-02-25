@@ -8,6 +8,8 @@ body {padding-top: 60px;padding-bottom: 40px;}
 .hero-unit h1 {font-size: 40px;}
 
 .hero-unit, .sidebar-nav {background-color: rgba(0,63,76,0.2);}
+.accordion-heading {background-color: rgba(0,63,76,0.3);}
+.accordion-heading a {text-decoration:none}
 
 .thumbnails > li {background-color:#EEEEEE; text-align:center}
 .thumbnails > li p {padding-top:15px; }
@@ -15,11 +17,11 @@ body {padding-top: 60px;padding-bottom: 40px;}
 .thumbnails > li {margin: 3px;}
 
 img {border-radius: 8px}
+.rounded {border-radius: 8px}
 
 .shadow {
   border: 1px solid #eee;
   border: 1px solid rgba(0,0,0,.05);
-  border-radius: 8px;
   box-shadow: 2px 2px 2px #C0C0C0;
   -moz-box-shadow: 2px 2px 2px #C0C0C0; 
   -webkit-box-shadow: 2px 2px 2px #C0C0C0;;
