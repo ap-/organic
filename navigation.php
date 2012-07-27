@@ -11,7 +11,7 @@
       <ul class="nav">
        <li class="active"><a href="#home">Home</a></li>
        <li><a href="/people/">People</a></li>
-       <li><a href="/test/">Test</a></li>
+       <li><a href="/books/">Books</a></li>
       </ul>
       <p class="navbar-text pull-right">
        <?php if ( is_user_logged_in() ) 
