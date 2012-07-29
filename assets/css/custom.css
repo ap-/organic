@@ -4,11 +4,14 @@ body {padding-top: 60px;padding-bottom: 40px;}
 .sidebar-nav {padding: 2px 0;}
 }
 
+a {color: rgba(39,55,64,0.8)}
+
 .hero-unit {padding: 20px; border: 1px solid rgba(0, 0, 0, 0.05);}
 .hero-unit h1 {font-size: 40px;}
 
-.hero-unit, .sidebar-nav {background-color: rgba(0,63,76,0.2);}
-.accordion-heading {background-color: rgba(0,63,76,0.3);}
+.hero-unit {background-color: rgba(39,55,64,0.6); }
+.sidebar-nav {background-color: rgba(39,55,64,0.2);}
+.accordion-heading {background-color: rgba(39,55,64,0.4);}
 .accordion-heading a {text-decoration:none}
 
 .thumbnails > li {background-color:#EEEEEE; text-align:center}
@@ -28,6 +31,7 @@ img {border-radius: 8px}
 }
 
 .nav-list .active > a, .nav-list .active > a:hover {
+background-color: rgba(39,55,64,1);
 border-radius: 2px;
 box-shadow: 2px 2px 2px #888;
 -mox-box-shadow: 2px 2px 2px #888;
