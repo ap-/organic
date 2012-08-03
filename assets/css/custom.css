@@ -6,6 +6,10 @@ body {padding-top: 60px;padding-bottom: 40px;}
 
 a {color: rgba(39,55,64,0.8)}
 
+#links {text-align:right; padding:5px}
+
+ul, li {list-style-type:none;}
+
 .hero-unit {padding: 20px; border: 1px solid rgba(0, 0, 0, 0.05);}
 .hero-unit h1 {font-size: 40px;}
 
