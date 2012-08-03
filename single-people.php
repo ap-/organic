@@ -20,6 +20,9 @@
        <p><?php echo get_post_meta($post->ID, "person.quote", true); ?></p>
        <small><?php the_title();?>, <?php echo get_post_meta($post->ID, "person.year.birth", true); ?>-<?php echo get_post_meta($post->ID, "person.year.death", true); ?></small>
       </blockquote>
+      <aside id="links">
+      <?php wp_list_bookmarks('title_li=&categorize=0&category_name='.get_the_title($post->ID)); ?>
+      </aside>
      </div><!--/span-->
      <div class="span8 content">
       <p><?php the_content();?></p>
