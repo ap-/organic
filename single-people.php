@@ -15,7 +15,12 @@
 
     <div class="row-fluid">
      <div class="span4">
-      <?php if ( has_post_thumbnail() ) { ?><?php the_post_thumbnail('medium',array('class' => 'shadow'));?><?php } else { ?><img src="http://placehold.it/300x500" class="shadow"><?php } ?>       
+      <a data-toggle="modal" href="#Image" ><?php if ( has_post_thumbnail() ) { ?><?php the_post_thumbnail('medium',array('class' => 'shadow'));?><?php } else { ?><img src="http://placehold.it/300x300" class="shadow"><?php } ?></a>
+       <div class="modal fade" id="Image" style="display:none;">
+        <a href="#" class="btn" data-dismiss="modal">X</a>
+        <?php the_post_thumbnail();?>
+       </div> 
+       <?php if ( has_post_thumbnail() ) { ?><br/><small class="caption"><em><?php echo get_post(get_post_thumbnail_id())->post_excerpt; ?></em><br/><br/></small><?php } ?> 
       <blockquote cite="/">
        <p><?php echo get_post_meta($post->ID, "person.quote", true); ?></p>
        <small><?php the_title();?>, <?php echo get_post_meta($post->ID, "person.year.birth", true); ?>-<?php echo get_post_meta($post->ID, "person.year.death", true); ?></small>
