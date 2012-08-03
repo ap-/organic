@@ -42,3 +42,5 @@ box-shadow: 2px 2px 2px #888;
 -webkit-box-shadow: 2px 2px 2px #888;}
 
 body {background: url(../img/body.png);}
+
+.content p {line-height: 24px; font-size: 15px; font-weight: 300;font-family: 'Helvetica Neue', Helvetica}
