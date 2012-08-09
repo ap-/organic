@@ -1,10 +1,13 @@
 <!doctype html>
+<?php $iExcerpt = get_the_excerpt(); $tags = array("<p>", "</p>"); $iExcerpt = str_replace($tags, "", $iExcerpt); ?>
+<?php global $iSiteName; $iSiteName = get_site_option('site_name'); ?>
+<?php global $iBlogName; $iBlogName = get_bloginfo('name'); ?>
 <html lang="en">
 <head>
  <meta charset="utf-8">
- <title>Organic</title>
+ <title><?php echo $iSiteName;?>/title>
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <meta name="description" content="">
+ <meta name="description" content="<?php if(is_single()) { echo $iExcerpt;; ?><?php } ?><?php echo get_post_meta($post->ID, "meta.description", true); ?>">
  <meta name="author" content="">
  <link href="<?php echo get_bloginfo('template_directory'); ?>/assets/css/bootstrap.min.css" rel="stylesheet">
  <link href="<?php echo get_bloginfo('template_directory'); ?>/assets/css/custom.css" rel="stylesheet">
