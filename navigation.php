@@ -9,7 +9,7 @@
      <a class="brand" href="/"><?php echo get_site_option('site_name');?></a>
      <div class="nav-collapse">
       <ul class="nav">
-       <li class="active"><a href="#home">Home</a></li>
+       <li class="active"><a href="/">Home</a></li>
        <li><a href="/people/">People</a></li>
        <li><a href="/books/">Books</a></li>
       </ul>
