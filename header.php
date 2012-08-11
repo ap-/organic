@@ -5,7 +5,7 @@
 <html lang="en">
 <head>
  <meta charset="utf-8">
- <title><?php echo $iSiteName;?>/title>
+ <title><?php echo $iSiteName;?></title>
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <meta name="description" content="<?php if(is_single()) { echo $iExcerpt;; ?><?php } ?><?php echo get_post_meta($post->ID, "meta.description", true); ?>">
  <meta name="author" content="">
