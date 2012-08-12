@@ -15,10 +15,15 @@
 
     <div class="row-fluid">
      <div class="span4">
-      <?php if ( has_post_thumbnail() ) { ?><?php the_post_thumbnail('medium',array('class' => 'shadow'));?><?php } else { ?><img src="http://placehold.it/300x500" class="shadow"><?php } ?>       
+      <a data-toggle="modal" href="#Image" ><?php if ( has_post_thumbnail() ) { ?><?php the_post_thumbnail('large',array('class' => 'shadow'));?><?php } else { ?><img src="http://placehold.it/300x300" class="shadow"><?php } ?></a>
+       <div class="modal fade" id="Image" style="display:none;">
+        <a href="#" class="btn" data-dismiss="modal">X</a>
+        <?php the_post_thumbnail();?>
+       </div> 
+       <br/><small class="caption"><?php echo get_post_meta($post->ID, "book.publisher", true); ?> <?php echo get_post_meta($post->ID, "book.ISBN", true); ?><br/><br/></small>
       <blockquote cite="/">
-       <p><?php echo get_post_meta($post->ID, "person.quote", true); ?></p>
-       <small><?php the_title();?>, <?php echo get_post_meta($post->ID, "person.year.birth", true); ?>-<?php echo get_post_meta($post->ID, "person.year.death", true); ?></small>
+       <p><?php echo get_post_meta($post->ID, "book.dedication", true); ?></p>
+       <small><?php echo get_post_meta($post->ID, "book.author", true); ?></small>
       </blockquote>
      </div><!--/span-->
      <div class="span8 content">

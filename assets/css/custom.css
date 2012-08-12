@@ -4,6 +4,14 @@ body {padding-top: 60px;padding-bottom: 40px;}
 .sidebar-nav {padding: 2px 0;}
 }
 
+
+.iMasonaryItems {
+  width: 200px;
+  margin: 5px;
+  float: left;
+}
+
+
 a {color: rgba(39,55,64,0.8)}
 
 #links {text-align:right; padding:5px}

@@ -28,24 +28,24 @@
   <hr>
 </nav>
 
-<div class="span12">
+<div id="iMasonary" class="span12">
 <ul class="thumbnails">
 <?php if ( have_posts() ) : ?>
  <?php while ( have_posts() ) : the_post(); ?>
   <li>
+  <div class="iMasonaryItems">
   <article>
    <a href="<?php the_permalink()?>" class="thumbnail shadow">
-    <?php if ( has_post_thumbnail() ) { ?><?php the_post_thumbnail('thumbnail',array('title' => ''));?><?php } else { ?><img src="http://placehold.it/150x150"><?php } ?>         
-    <p><?php the_title();?></p> 
+    <?php if ( has_post_thumbnail() ) { ?><?php the_post_thumbnail('medium',array('title' => ''));?><?php } else { ?><img src="http://placehold.it/200x250"><?php } ?>         
+    <p><?php the_title();?></p><em><?php the_excerpt();?></em>
    </a>
   </article>
+  </div>
   </li>     
  <?php endwhile; ?>
 <?php endif; ?>
 </ul>
 </div>
-
-
+    
 </div><!--/row-->
-
 <?php get_footer();?>

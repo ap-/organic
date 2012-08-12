@@ -2,6 +2,7 @@
 <?php $iExcerpt = get_the_excerpt(); $tags = array("<p>", "</p>"); $iExcerpt = str_replace($tags, "", $iExcerpt); ?>
 <?php global $iSiteName; $iSiteName = get_site_option('site_name'); ?>
 <?php global $iBlogName; $iBlogName = get_bloginfo('name'); ?>
+<?php global $iBlogPath; $iBlogPath = str_replace('/','',$GLOBALS['path']);?>
 <html lang="en">
 <head>
  <meta charset="utf-8">
