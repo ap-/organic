@@ -36,7 +36,7 @@
   <article>
    <a href="<?php the_permalink()?>" class="thumbnail shadow">
     <?php if ( has_post_thumbnail() ) { ?><?php the_post_thumbnail('medium',array('title' => ''));?><?php } else { ?><img src="http://placehold.it/200x250"><?php } ?>         
-    <p><?php the_title();?></p><em><?php the_excerpt();?></em>
+    <p><?php the_title();?></p><em><?php echo get_post_meta($post->ID, "book.tagline", true); ?></em>
    </a>
   </article>
   </li>     
