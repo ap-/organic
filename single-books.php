@@ -9,7 +9,8 @@
     <header class="hero-unit shadow">
       <hgroup>
        <h1><?php the_title();?></h1>
-       <h2><?php the_excerpt();?></h2>
+       <h3><em><?php echo get_post_meta($post->ID, "book.tagline", true); ?></em></h3>
+       <p><?php the_excerpt();?></p>
       </hgroup>
      </header>
 
