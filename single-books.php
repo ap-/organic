@@ -25,6 +25,9 @@
        <p><?php echo get_post_meta($post->ID, "book.dedication", true); ?></p>
        <small><?php echo get_post_meta($post->ID, "book.author", true); ?></small>
       </blockquote>
+      <aside id="links">
+      <?php wp_list_bookmarks('title_li=&categorize=0&category_name='.get_the_title($post->ID)); ?>
+      </aside>
      </div><!--/span-->
      <div class="span8 content">
       <p><?php the_content();?></p>
