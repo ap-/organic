@@ -12,6 +12,7 @@
        <li class="active"><a href="/">Home</a></li>
        <li><a href="/people/">People</a></li>
        <li><a href="/books/">Books</a></li>
+       <li><a href="/additives/">Additives</a></li>
       </ul>
       <p class="navbar-text pull-right">
        <?php if ( is_user_logged_in() ) 
