@@ -41,7 +41,7 @@
 </div><!--/span-->
 
 <div class="span3">
-<?php get_template_part('sidebar','people');?>
+<?php get_template_part('sidebar','general');?>
 </div><!--/span-->
 
 </div><!--/row-fluid-->
