@@ -11,7 +11,7 @@
  <meta name="description" content="<?php if(is_single()) { echo $iExcerpt;; ?><?php } ?><?php echo get_post_meta($post->ID, "meta.description", true); ?>">
  <meta name="author" content="">
  <link href="<?php echo get_bloginfo('template_directory'); ?>/assets/css/bootstrap.min.css" rel="stylesheet">
- <link href="<?php echo get_bloginfo('template_directory'); ?>/assets/css/custom.css" rel="stylesheet">
+ <link href="<?php echo get_bloginfo('template_directory'); ?>/custom.css" rel="stylesheet">
  <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>
 <body <?php body_class($class); ?>>
